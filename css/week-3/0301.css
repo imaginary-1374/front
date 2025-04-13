@@ -1,0 +1,55 @@
+p {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize ;
+    font-size: 50px;
+}
+.zero {
+    text-shadow:
+    2.5px 1.1px 0px #ee4135,
+    4.8px 2.3px 0px #2a92ea,
+    6.1px 3.5px 0px #9930b4;
+}
+.one {
+    text-transform: uppercase ;
+}
+.three {
+    text-transform: lowercase;
+}
+
+
+div {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    width: 400px;
+    line-height: 160%;
+    
+}
+.a2{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.a3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #00514a;
+    background-color: #009688;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 30px;
+}

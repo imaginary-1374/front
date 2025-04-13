@@ -1,0 +1,45 @@
+.first,.second,.third, div{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 55px;
+    border-width: 5px;
+    outline: 5px solid;
+    background-color: #eee;
+    text-align: center;
+    line-height: 50px;
+}
+.first {
+    border-style: solid;
+    border-color: red;
+}
+.second {
+    border:  solid;
+    border-color:  blue green;
+}
+.third {
+    border:  dashed ;
+    border-color:  red green blue yellow;
+}
+/*نهاية التكليف الاول*/
+.assingment2 div {
+    background-color: #eee;
+    display: block;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-left-style: solid;
+    border-width: 7px;
+    outline: 10px solid #eee;
+    
+}
+.element-1 {
+    border-left-color: palevioletred;
+}
+.element-2 {
+    visibility: hidden;
+}
+.element-3 {
+    border-left-color: skyblue;
+}
