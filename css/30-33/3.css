@@ -1,0 +1,25 @@
+ul {
+    width: 400px;
+    list-style: none;
+    padding-left: 0px;
+}
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.HTML,
+.CSS,
+.JavaScript {
+    background-color: #eee;
+}
+.ul-JavaScript {
+    list-style: circle inside;
+    padding-left: 10px;
+    background-color: #eee;
+    width: auto;
+}
+.in-HTML,
+.in-CSS,
+.in-JavaScript {
+        background-color: #fff;
+}

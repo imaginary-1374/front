@@ -1,0 +1,33 @@
+.parent {
+    background-color: #eee;
+    width: 800px;
+    height: 275px;
+}
+.one,
+.two,
+.three,
+.four {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    background-color: #ddd;
+    margin: 15px 0px 15px 15px; /*لما لغيت الايمين الكلام بقا مظبوط */
+    text-align: center;
+}
+
+.one {
+    width: calc((100% - (2*15px))/1);
+}
+.two {
+    width: calc((100% - (3*15px))/2);
+}
+.three {
+    width: calc((100% - (4*15px))/3);
+}
+.four {
+    width: calc((100% - (5*15px))/4);
+}
+
+.clear {
+    clear: both;
+}
