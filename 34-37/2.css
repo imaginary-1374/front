@@ -1,0 +1,15 @@
+div::first-letter {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    margin-left: -20px;
+    margin-top: -7px;
+    float: left;
+}
+div {
+    background-color: #d4d4d4;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}

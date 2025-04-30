@@ -1,0 +1,33 @@
+p:before {
+    background-color: #dddddd;
+    content: attr(data-person);
+    position: absolute;
+    left: -20%;
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent #e91e63 transparent transparent;
+    float: left;
+    left: -24px;
+
+}
+p {
+    position: relative;
+    background-color: #efefef;
+    width: 400px;
+    height: 25px;
+    margin: 10px auto;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border-left: #e91e63 solid 3px;
+}
