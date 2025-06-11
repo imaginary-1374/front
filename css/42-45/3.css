@@ -1,0 +1,7 @@
+
+div {
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px) ;
+    border: var(--mainColor, black) solid 2px ;
+    margin: 5px;
+}

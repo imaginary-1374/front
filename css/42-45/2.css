@@ -1,0 +1,18 @@
+div {
+    visibility: hidden;
+    position: relative;
+}
+div::after{
+    position: absolute;
+    visibility: visible;
+    content: "elzero";
+    width: 400px;
+    font-size: 20px;
+    margin: 20px;
+    background-color: #eee;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    left: 60px;
+    bottom:50px;
+}

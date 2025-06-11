@@ -1,0 +1,46 @@
+.page{
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(8,auto);
+    grid-gap: 7px 7px;
+    font-family: sans-serif;
+}
+.page div{
+    padding: 9px;
+    border-bottom: 3px solid hsl(14, 88%, 54%);
+}
+.one,
+.two,
+.four,
+.six,
+.seven,
+.nine,
+.ten{
+    background-color: white;
+    color: black;
+}
+.three,
+.five,
+.eight{
+    background-color: black;
+    color: white;
+}
+.one,
+.five,
+.six{
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+.two{
+    grid-row-end: span 2;
+}
+.three{
+    grid-row-end: span 6;
+}
+.four{
+    grid-row-end: span 4;
+}
+h5{
+    opacity: 50%;
+}

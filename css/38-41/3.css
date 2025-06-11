@@ -1,0 +1,8 @@
+.parent{
+    width: 550px;
+    display: inline-block;
+}
+.one{
+    background-color: #03a9f4;
+    background-size: contain;
+}

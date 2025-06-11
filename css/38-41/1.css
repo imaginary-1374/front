@@ -1,0 +1,27 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 10px;
+    border-radius: 50%;
+    box-shadow:  -6px -6px 0px  #e91e63, 
+    6px 6px 0px #2195f1 ;
+    outline-color: black;
+    outline-style: solid;
+    position: relative;
+    counter-increment: num;
+}
+.one::before,
+.two::before,
+.three::before{
+    content: counter(num);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 33px;
+    top: -14px;
+}

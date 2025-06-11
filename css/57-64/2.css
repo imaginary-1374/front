@@ -1,0 +1,51 @@
+div{
+    background-color: #eee;
+    display: grid;
+    justify-self: center;
+    grid-template-rows: .5fr 3fr .5fr;
+    grid-template-columns: 4fr 1fr;
+    width: 100%;
+    height: 875px;
+}
+header{
+    padding: 20px;
+    grid-column-start: span 2;
+    background-color: rgb(51, 216, 216);
+    color: white;
+    font-family: sans-serif;
+}
+header::before{
+    content: "Header";
+}
+
+section{
+    padding: 20px;
+    background-color: rgb(255, 102, 0);
+}
+section::before{
+    content: "Section";
+    color: white;
+    font-family: sans-serif;
+}
+aside{
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.87);
+}
+aside::before{
+    content: "Aside";
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+footer{
+    padding: 20px;
+    grid-column-start: span 2;
+    background-color: rgba(0, 47, 255, 0.685);
+    color: white;
+    font-family: sans-serif;  
+}
+footer::before{
+    content: "Footer";
+}

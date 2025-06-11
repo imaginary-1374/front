@@ -1,0 +1,27 @@
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    margin => 10px each direction 40px total
+    width left => 540
+    margin again in child make total width left 500px
+*/
+
+.parent div{
+    display: flex;
+    background-color: #f44336;
+    color: white;
+    width: calc(500px / 3);
+    height: 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}

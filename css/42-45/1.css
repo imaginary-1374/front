@@ -1,0 +1,28 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.parent{
+    text-transform: capitalize;
+    background-color: #eee;
+    padding: 30px;
+    margin: 60px;
+    width: 400px;
+    height: 150px;
+    transition-duration: .5s;
+    text-align: center;
+
+}
+.child{
+    background-color: #dededc;
+    transition-duration: .5s;
+    transition-delay: .5s;
+    margin: 20px;
+}
+.parent:hover{
+    margin-top: 20px;
+}
+.parent:hover .child{
+    margin-top: 30px;
+}
