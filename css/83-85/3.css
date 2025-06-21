@@ -1,0 +1,46 @@
+
+.parent {
+    gap: 20px; 
+    padding: 10px;
+    max-width: 1280px; 
+    display: grid;
+    margin: 0 auto;
+}
+
+.parent > div {
+    display: grid;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media (min-width: 1025px){
+    .parent{
+        grid-template-columns: repeat(2,1fr);
+    }
+    h2{
+        color: #39aba0;
+    }
+    .one{
+        grid-column: span 2;
+    }
+    .four{
+        grid-column: span 2;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .parent{
+        grid-template-columns: repeat(3,1fr);
+    }
+    h2{
+        color: #fc2222;
+    }
+    .one{
+        grid-column: span 3;
+    }
+
+}

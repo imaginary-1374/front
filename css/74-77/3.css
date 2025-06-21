@@ -1,0 +1,19 @@
+span{
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    display: flex;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 5px solid #000;
+    border-bottom: 5px solid transparent;
+    animation: loading 1s linear infinite reverse;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

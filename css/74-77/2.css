@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+    border-radius: 50%;
+    border: 5px solid #2497f2;
+    border-bottom: 5px solid transparent;
+    position: relative;
+    margin: 250px;
+    animation: loading 1s infinite linear paused;
+}
+
+div::before {
+    content: "";
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    border: 5px solid #fc9c00;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: loading 3s infinite linear paused;
+}
+
+div::after {
+    content: "";
+    width: 175%;
+    height: 175%;
+    border-radius: 50%;
+    border: 5px solid #000;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: loading 4s infinite linear paused;
+}
+
+div:hover,
+div:hover::before,
+div:hover::after {
+    animation-play-state: running;
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+/*لازم تحط ترانسليت تاني في الهوفر عشان متتلغاش و يتعملها اوفررايت لما الانيميشن يشتغل */

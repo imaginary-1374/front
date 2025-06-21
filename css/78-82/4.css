@@ -1,0 +1,3 @@
+div+div+div[title]:not([class]):not(:last-of-type){
+    color: red;
+}
