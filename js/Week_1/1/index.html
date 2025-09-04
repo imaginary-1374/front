@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+        // Code One
+        /*
+        This code will not work because it tries to access the DOM element with id="el"
+        before the HTML document is fully parsed. Since this script is located in the <head>
+        section and runs immediately, the <h1 id="el"> element does not yet exist in the DOM.
+        As a result, document.getElementById("el") returns null, and attempting to access
+        the .style property will cause a TypeError.
+        */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
