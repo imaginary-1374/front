@@ -29,8 +29,8 @@ add.addEventListener('blur',function(){
         // add span child to list
         for (let i = 0; i < element.length; i++) {
             span = document.createElement('span');
-    span.textContent = sorted_classes[i];
-    list.appendChild(span);
+            span.textContent = sorted_classes[i];
+            list.appendChild(span);
 }
 add.value ='';
 }
