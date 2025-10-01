@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+.container{
+    margin: 0px auto;
+    margin-bottom: 8px;
+    padding: 40px 20px;
+    /* max-width: 400px; */
+}
+.app-title{
+    font-size: 2rem;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Start Task-input And Sumit */
+.enter-task{
+    display: flex;
+}
+/* Start Task-input */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.enter-task #task-input{
+    flex: 2;
+    height: 40px;
+    border: 2px solid #2C3E50;
+    border-radius: 6px;
+    font-family: Arial;
+    font-size: 1rem;
+    color: #2C3E50;
+    margin: 0 8px;
+    padding: 8px 10px;
+    transition: all .3s ease;
+}
+.enter-task #task-input:focus{
+    outline: none;
+    box-shadow: 0 0 5px #3498DB;
+    border-color: #3498DB;
+}
+.enter-task #task-input::placeholder {
+    color: #95A5A6;
+    opacity: 0.7;
+}
+/* End Task-input */
+
+/* Start Wubmit */
+.enter-task .sub{
+    flex: .5;
+    height: 40px;
+    background-color: #2C3E50;
+    font-family: Arial;
+    font-size: 1rem;
+    color: #ECF0F1;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    padding: 8px 10px;
+    transition: all .3s ease;
+}
+.enter-task .sub:hover{
+    background-color: #3498DB;
+}
+.enter-task .sub:focus,
+li .delete:focus {
+    outline: 2px solid #3498DB;
+    outline-offset: 2px;
+}
+/* End Wubmit */
+
+/* End task-input and sumit */
+
+
+/* Start Ul list*/
+/* Start Embty */
+.empty-state{
+    color: #95A5A6;
+    text-align: center;
+    padding: 40px 20px;
+    font-style: italic;
+}
+/* End Embty */
+.list{
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Start Task */
+.list li{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #FFFFFF ;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    align-items: center;
+    justify-content: space-between;
+}
+.list li:hover{
+    background-color: #F8F9FA;
+    box-shadow: 0 2px 6px rgba(52, 152, 219, 0.15);
+    transform: translateY(-1px);
+}
+/* End Text */
+li .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1rem;
+    color: #2C3E50;
+}
+li .text #check{
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #3498DB;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+.done .text span{
+    text-decoration: line-through;
+    color: #95A5A6;
+    opacity: 0.7;
+    transition: all .6s ease;
+}
+/* End Text */
+
+/* Start Delete Button */
+li .delete{
+    background-color: #E74C3C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    transition: all .2s ease;
+}
+li .delete:hover{
+    background-color: #C0392B;
+    cursor: pointer;
+}
+/* End Delete Button */
+/* Start Edit Button */
+li .edit{
+    border: none;
+    margin-left: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: .9rem;
+}
+/* End Edit Button */
+
+/* End Task */
+
+/* End Ul list*/
+
+/* Accessibility recommended by claude ai*/
+button:focus {
+    outline: none; /* امسح الـ default */
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* حط custom */
+}
+
+/* Start Media */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        max-width: 400px;
+    }
+    
+    .app-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .enter-task {
+        flex-direction: column;
+    }
+    
+    .enter-task #task-input {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+    
+    .enter-task .sub {
+        margin: 0;
+        width: 100%;
+    }
+}
+/* End Media */
